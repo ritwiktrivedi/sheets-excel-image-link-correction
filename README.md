@@ -1,8 +1,7 @@
-# 🎈 Blank app template
+# 🎈 Google Sheets to Excel Export Image correction by replacement or embedding image
 
-A simple Streamlit app template for you to modify!
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+This app is still under development and does not properly work.
 
 ### How to run it on your own machine
 
