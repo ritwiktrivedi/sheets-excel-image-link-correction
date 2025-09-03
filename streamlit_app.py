@@ -323,14 +323,24 @@ def main():
         1. **Insert actual images into Excel:**
            - Downloads images from URLs in @IMAGE functions
            - Embeds the actual images directly into Excel cells
+           - Option to keep or replace the original @IMAGE formulas
            - Automatically resizes images to fit
            - Adjusts row height and column width
-           - Falls back to formula replacement if image download fails
+           - Falls back gracefully if image download fails
         
         2. **Replace formulas only:**
            - Simply converts `=@IMAGE("url")` to `=IMAGE("url")`
            - No image downloading or embedding
            - Fast processing
+        
+        **Image Embedding Options:**
+        - **Replace @IMAGE with IMAGE formula (checked):** Clears the cell content and only shows the embedded image
+        - **Keep original @IMAGE formula (unchecked):** Embeds the image but keeps the original formula in the cell
+        
+        **Use Cases for Keeping Formulas:**
+        - When you want both the embedded image and the function for reference
+        - If you need to maintain the original formula structure
+        - For backup purposes in case images need to be re-processed
         
         **Supported Formats:**
         - `.xlsx` (Excel 2007+)
